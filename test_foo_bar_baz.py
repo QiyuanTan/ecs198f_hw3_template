@@ -1,9 +1,8 @@
 import pytest
 
-from foo_bar_baz import foo_bar_baz
-
 #Add testcases Here
 def test_foo_bar_baz():
+    from foo_bar_baz import foo_bar_baz
     assert foo_bar_baz(0) == ""
     assert foo_bar_baz(1) == "1"
     assert foo_bar_baz(2) == "1 2"
@@ -14,10 +13,12 @@ def test_foo_bar_baz():
 
 
 def test_foo_bar_baz_negative():
+    from foo_bar_baz import foo_bar_baz
     assert foo_bar_baz(-2) == ""
     assert foo_bar_baz(-3) == ""
 
 def test_foo_bar_baz_non_int():
+    from foo_bar_baz import foo_bar_baz
     try:
         assert foo_bar_baz(114.514) == ""
     except TypeError:
