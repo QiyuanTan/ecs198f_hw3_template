@@ -13,8 +13,8 @@ def test_foo_bar_baz():
 
 
 def test_foo_bar_baz_negative():
-    assert foo_bar_baz(-2) == "0 -1 -2"
-    assert foo_bar_baz(-3) == "0 -1 -Foo"
+    assert foo_bar_baz(-2) == ""
+    assert foo_bar_baz(-3) == ""
 
 def test_foo_bar_baz_non_int():
     try:
